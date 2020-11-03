@@ -2,7 +2,7 @@
 window.onload=function(){
   $.ajax({
     type: "GET",
-    url: "terrabrasilis-faq.json",
+    url: "https://raw.githubusercontent.com/terrabrasilis/FAQ/main/terrabrasilis-faq.json",
     dataType: "json",
     success: function(json) {
       json.itens.forEach(item => {
