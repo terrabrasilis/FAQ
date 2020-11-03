@@ -12,7 +12,7 @@ window.onload=function(){
         html+='</div>';
         $("#faq-itens").append(html);
       });
-      $('#loading').hide();
+      //$('#loading').hide();
     }
   });
 }
