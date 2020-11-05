@@ -1,0 +1,80 @@
+{
+  "itens":[
+    {
+      "question":"O que é o PRODES?",
+      "answer":"O projeto PRODES realiza o monitoramento por satélites do desmatamento por corte raso na Amazônia Legal e produz, desde 1988, as taxas anuais de desmatamento na região, que são usadas pelo governo brasileiro para o estabelecimento de políticas públicas. Para mais informações clique <a href='http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/prodes' target='_blank'>aqui</a>."
+    },
+    {
+      "question":"O que é o DETER?",
+      "answer":"O DETER é um levantamento rápido de alertas de evidências de alteração da cobertura florestal na Amazônia, feito pelo INPE. O DETER foi desenvolvido como um sistema de alerta para dar suporte à fiscalização e controle de desmatamento e da degradação florestal realizadas pelo Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA) e demais órgãos ligados a esta temática. Para mais informações clique <a href='http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/deter/deter' target='_blank'>aqui</a>."
+    },
+    {
+      "question":"O que é o TerraBrasilis?",
+      "answer":"O portal TerraBrasilis é uma plataforma web desenvolvida pelo INPE para acesso, consulta, análise e disseminação de dados geográficos gerados pelos projetos de monitoramento da vegetação nativa do instituto como o PRODES e o DETER. Através do TerraBrasilis qualquer pessoa pode acessar os mapas e realizar análises sobre os dados diretamente do portal , sem necessitar de ferramentas específicas. Para mais informações clique <a href='http://terrabrasilis.dpi.inpe.br/sobre/' target='_blank'>aqui</a>."
+    },
+    {
+      "question":"Quais dados de desmatamento estão disponíveis no TerraBrasilis?",
+      "answer":"Os dados de desmatamento são trabalhados em duas frentes dentro do programa de monitoramento do desmatamento, cada qual com um objetivo específico. O programa PRODES, que faz a contabilização anual do que já foi desmatado no ano anterior e o programa DETER que faz apontamentos diários de indícios de desmatamento, com menor precisão, para apoiar o planejamento das ações de fiscalização, controle e autuação promovidas por órgãos como <a href='https://www.gov.br/ibama/pt-br' target='_blank'>IBAMA</a>, <a href='https://www.gov.br/icmbio/pt-br' target='_blank'>ICMBio</a>, <a href='https://www.mma.gov.br/' target='_blank'>Ministério do Meio Ambiente</a>, <a href='http://www.mpf.mp.br/' target='_blank'>Ministério Público</a> entre outros."
+    },
+    {
+      "question":"Com qual frequência os dados de desmatamento são disponibilizados?",
+      "answer":"Dados de desmatamento provenientes do programa DETER são disponibilizados diariamente e os dados de desmatamento do programa PRODES são disponibilizados com frequência anual ou bienal."
+    },
+    {
+      "question":"No painel de estatísticas de desmatamento existem taxas anuais de desmatamento desde 1988 mas não existem incrementos anuais destes mesmos anos, por quê?",
+      "answer":"As taxas anuais de desmatamento são valores calculados por um algoritimo. Este processo leva em conta uma série de informações inclusive as áreas de desmatamento medidas usando as imagens de satélite, chamadas de incrementos no desmatamento.Ocorre que as áreas de desmatamento medidas nas fazes iniciais do programa PRODES usavam tecnologias muito diferentes das atuais gerando dados topológicamente incompatíveis com as novas bases de dados. Assim, durante a última atualização tecnológica optou-se por agregar todos os dados geográficos desde 1988 até 2007 em uma camada única, impossibilitando assim a discriminação anual. Para mais detalhes das fases da evolução tecnológica do programa PRODES, clique <a href='http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/prodes' target='_blank'>aqui</a> e nesta <a href='http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/prodes/pdfs/nt_deslocamentomascara.pdf' target='_blank'>nota técnica</a>."
+    },
+    {
+      "question":"É possível obter incrementos anuais de área de desmatamento anteriores à 2008 para a Amazônia?",
+      "answer":"Não é possível. Os dados de incrementos anuais anteriores à 2008 estão agregados em um único conjunto, de 1988 até 2007. Para saber mais sobre os motivos pelos quais este dado foi agregado, visite a página do PRODES clicando <a href='http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/prodes' target='_blank'>aqui</a>."
+    },
+    {
+      "question":"Como obter a série histórica dos dados de desmatamento na Amazônia desde 1988?",
+      "answer":"Os dados do programa PRODES para a Amazônia Legal estão disponíveis integralmente na <a href='http://terrabrasilis.dpi.inpe.br/downloads' target='_blank'>página de download</a> em formato shapefile."
+    },
+    {
+      "question":"Qual a diferença entre taxas de desmatamento e incrementos de área de desmatamento?",
+      "answer":"Conforme descrito neste na página do <a href='http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/prodes' target='_blank'>PRODES</a>, as taxas são estimativas calculadas a partir dos dados de incrementos de desmatamento. Incremento é o valor medido pelo processo de interpretação visual das imagens de satélite disponíveis para cada fração da Amazônia, onde as frações são cada cena ou foto do satélite que juntas recobrem toda a área de interesse. Para os valores medidos de incrementos de desmatamento anual, os valores disponíveis para apresentação no terrabrasilis são a partir de 2008. Isso se dá pois os dados anteriores, que fazem parte da série histórica, foram produzidos em uma fase diferente do projeto PRODES e com ferramentas diferentes."
+    },
+    {
+      "question":"Por que os dados diários do DETER são atualizados semanalmente no TerraBrasilis?",
+      "answer":"O atraso de uma semana para a liberação destes dados ao público é proposital pois seu uso primário é apoiar o planejamento das ações de fiscalização, controle e autuação promovidas por órgãos como <a href='https://www.gov.br/ibama/pt-br' target='_blank'>IBAMA</a>, <a href='https://www.gov.br/icmbio/pt-br' target='_blank'>ICMBio</a>, <a href='https://www.mma.gov.br/' target='_blank'>Ministério do Meio Ambiente</a>, <a href='http://www.mpf.mp.br/' target='_blank'>Ministério Público</a> entre outros. O acesso aos dados com atualização diária é disponibilizado mediante autenticação de usuário."
+    },
+    {
+      "question":"Por que o shapefile com dados do programa DETER (Amazônia) não possue os dados do período Agosto/2015 a Julho/2016 se estes dados são apresentados no painel de avisos de desmatamento?",
+      "answer":"O programa DETER foi iniciado antes desta data, Agosto/2015, mas executava em caráter experimental e sofreu diversas alterações e interrupções, assim sendo, publicamos dados para amplo consumo apenas após a estabilização e mínima garantia de continuidade."
+    },
+    {
+      "question":"O projeto PRODES faz o monitoramento de desmatamento anual em projetos de assentamento?",
+      "answer":"O projeto PRODES não mira em projetos de assentamento. As interpretações usam como base os limites da Amazônia Legal. Outros levantamentos usam os limites dos Biomas, caso do Cerrado, Pampa e Pantanal. Para obter esses dados é necessário obter os dados do PRODES na <a href='http://terrabrasilis.dpi.inpe.br/downloads' target='_blank'>página de download</a> e realizar o cruzamento espacial, intersecção, com os polígonos de interesse, por exemplo as áreas de assentamentos."
+    },
+    {
+      "question":"É possível gerar taxas de desmatamento por município, unidade de conservação ou terras indígenas?",
+      "answer":"Não é possível. O recorte máximo são os estados da Amazônia Legal. Para estes casos específicos são utilizados os <a href='http://terrabrasilis.dpi.inpe.br/app/dashboard/deforestation/biomes/legal_amazon/increments' target='_blank'>incrementos</a>."
+    },
+    {
+      "question":"O INPE faz mapas individuais caso o usuário solicite?",
+      "answer":"Não. O INPE não pode atender demandas específicas dos usuários. Mas com algum conhecimento em Sistemas de Informação Geográfica (SIG), o usuário pode manipular e fazer consultas sobre os dados disponíveis na <a href='http://terrabrasilis.dpi.inpe.br/downloads' target='_blank'>página de download</a>."
+    },
+    {
+      "question":"São disponibilizados os metadados?",
+      "answer":"Os metadados dos dados geoespaciais disponíveis na plataforma TerraBrasilis estão no catálogo de metadados no GeoNetowork. Os metadados seguem o padrão ISO 19115:2003 recomendado pela Infraestrutura Nacional de Dados Espaciais (INDE). Para acessar, clique <a href='http://terrabrasilis.dpi.inpe.br/geonetwork/srv/eng/catalog.search#/home' target='_blank'>aqui</a>."
+    },
+    {
+      "question":"Consigo acessar os metadados espaciais do TerraBrasilis pelo portal da INDE?",
+      "answer":"Sim. O catálogo de metadados do TerraBrasilis pode ser explorado pelo visualizador da INDE. Para acessar, clique <a href='https://visualizador.inde.gov.br/Ativar?url=http://terrabrasilis.dpi.inpe.br/geoserver/ows' target='_blank'>aqui</a>."
+    },
+    {
+      "question":"Como acesso os dados do TerraBrasilis via serviço WFS?",
+      "answer":"Insira a URL 'http://terrabrasilis.dpi.inpe.br/geoserver/ows' como fonte de dadospara conexão. Para mais detalhes, clique <a href='http://terrabrasilis.dpi.inpe.br/download-de-dados/' target='_blank'>aqui</a>."
+    },
+    {
+      "question":"Posso utilizar livremente os dados disponibilizados na plataforma TerraBrasilis?",
+      "answer":"Sim, desde que respeite a licença de uso e cite a fonte, conforme instruções do link <a href='http://terrabrasilis.dpi.inpe.br/citacoes-e-licenca-de-uso/' target='_blank'>Citações e Licença de Uso</a>."
+    },
+    {
+      "question":"Como posso citar os dados apresentados na plataforma TerraBrasilis?",
+      "answer":"Para citar a plataforma TerraBrasilis ou programas (PRODES/DETER) utilizar a referência disponível no link <a href='http://terrabrasilis.dpi.inpe.br/citacoes-e-licenca-de-uso/' target='_blank'>Citações e Licença de Uso</a>."
+    }
+  ]
+}

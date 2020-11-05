@@ -1,0 +1,44 @@
+{
+  "itens":[
+    {
+      "question":"Quais dados de desmatamento estão disponíveis no TerraBrasilis?",
+      "answer":"Os dados de desmatamento são trabalhados em duas frentes dentro do programa de monitoramento do desmatamento, cada qual com um objetivo específico. O programa PRODES, que faz a contabilização anual do que já foi desmatado no ano anterior e o programa DETER que faz apontamentos diários de indícios de desmatamento, com menor precisão, para apoiar o planejamento das ações de fiscalização, controle e autuação promovidas por órgãos como IBAMA, ICMBio, Ministério Público entre outros."
+    },
+    {
+      "question":"Com qual frequência os dados de desmatamento são disponibilizados?",
+      "answer":"Dados de desmatamento provenientes do programa DETER são disponibilizados diariamente e os dados de desmatamento do programa PRODES são disponibilizados com frequência anual ou bienal."
+    },
+    {
+      "question":"No painel de estatísticas de desmatamento existem taxas anuais de desmatamento desde 1988 mas não existem incrementos anuais destes mesmos anos, por quê?",
+      "answer":"As taxas anuais de desmatamento são valores calculados por um algoritimo. Este processo leva em conta uma série de informações inclusive as áreas de desmatamento medidas usando as imagens de satélite, chamadas de incrementos no desmatamento.Ocorre que as áreas de desmatamento medidas nas fazes iniciais do programa PRODES usavam tecnologias muito diferentes das atuais gerando dados topológicamente incompatíveis com as novas bases de dados. Assim, durante a última atualização tecnológica optou-se por agregar todos os dados geográficos desde 1988 até 2007 em uma camada única, impossibilitando assim a discriminação anual. Veja mais detalhes das fazes da evolução tecnológica do programa PRODES em http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/prodes"
+    },
+    {
+      "question":"É possível obter incrementos anuais de área de desmatamento anteriores à 2008 para a Amazônia?",
+      "answer":"Não é possível. Os dados de incrementos anuais anteriores à 2008 estão agregados em um único conjunto, de 1988 até 2007. Quer saber mais sobre os motivos pelos quais este dado foi agregado, visite a página do PRODES neste link: http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/prodes"
+    },
+    {
+      "question":"Como obter a série histórica dos dados de desmatamento na Amazônia desde 1988?",
+      "answer":""
+    },
+    {
+      "question":"Qual a diferença entre taxas de desmatamento e incrementos de área de desmatamento?",
+      "answer":""
+    },
+    {
+      "question":"Por que os dados diários do DETER são atualizados semanalmente no TerraBrasilis?",
+      "answer":"O atraso de uma semana para a liberação destes dados ao público é proposital pois seu uso primário é apoiar o planejamento das ações de fiscalização, controle e autuação promovidas por órgãos como IBAMA, ICMBio, Ministério Público entre outros. O acesso aos dados com atualização diária é disponibilizado mediante autenticação de usuário."
+    },
+    {
+      "question":"Por que o shapefile com dados do programa DETER (Amazônia) não possue os dados do período Agosto/2015 a Julho/2016 se estes dados são apresentados no painel de avisos de desmatamento?",
+      "answer":"O programa DETER foi iniciado antes desta data, Agosto/2015, mas rodava em caráter experimental e sofreu muitas alterações e interrupções, assim sendo, publicamos dados para amplo consumo apenas após a estabilização e mínima garantia de continuidade."
+    },
+    {
+      "question":"Posso utilizar livremente os dados disponibilizados na plataforma TerraBrasilis?",
+      "answer":"Sim, desde que respeite nossa licença de uso e cite a fonte, conforme instruções do link http://terrabrasilis.dpi.inpe.br/citacoes-e-licenca-de-uso/"
+    },
+    {
+      "question":"Qual a forma correta de citar os dados apresentados na plataforma TerraBrasilis?",
+      "answer":"Para citar a plataforma TerraBrasilis ou programas (PRODES/DETER) utilizar a referência disponível no link http://terrabrasilis.dpi.inpe.br/citacoes-e-licenca-de-uso/"
+    }
+  ]
+}
