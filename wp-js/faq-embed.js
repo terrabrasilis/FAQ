@@ -2,6 +2,7 @@
 window.onload=function(){
   $.ajax({
     type: "GET",
+    //url: "/terrabrasilis-faq-en.json",
     url: "https://raw.githubusercontent.com/terrabrasilis/FAQ/main/terrabrasilis-faq-pt.json",
     // url: "https://raw.githubusercontent.com/terrabrasilis/FAQ/main/terrabrasilis-faq-en.json",
     dataType: "json",
