@@ -1,16 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test JS code</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" ></script>
+  <title>FAQ</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="./wp-js/faq-embed.js" type="text/javascript"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+    }
+
+    #faq-itens {
+      max-width: 1100px;
+      margin: 30px auto;
+    }
+
+    .category {
+      margin-bottom: 18px;
+    }
+
+    .accordion {
+      width: 100%;
+      background-color: #ffffff;
+      border: 1px solid #d9e3df;
+      padding: 18px 22px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #0a7f62;
+      text-align: left;
+      cursor: pointer;
+      position: relative;
+      border-radius: 3px;
+    }
+
+    .accordion:hover {
+      background-color: #f7fbfa;
+    }
+
+    .accordion .icon {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      border-right: 2px solid #0a7f62;
+      border-bottom: 2px solid #0a7f62;
+      transform: translateY(-50%) rotate(45deg);
+      transition: transform 0.2s ease;
+    }
+
+    .accordion.active .icon {
+      transform: translateY(-50%) rotate(-135deg);
+    }
+
+    .panel {
+      display: none;
+      padding: 20px 22px;
+      border: 1px solid #d9e3df;
+      border-top: none;
+      background-color: #ffffff;
+    }
+
+    /* FAQ Itens */
+    .question-item {
+      background-color: #ffffff;
+      border: 2px solid #f5f5f5;
+      border-left: 5px solid #96c964;
+      padding: 22px 25px;
+      margin-bottom: 20px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .faq-heading {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .faq-text {
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #666;
+      line-height: 22px;
+      margin: 0;
+    }
+  </style>
 </head>
+
 <body>
-  <!-- <div id="loading" style="width: 100%;text-align: center;">
-    <img src="http://terrabrasilis.dpi.inpe.br/wp-content/uploads/2019/12/terrabrasilis_loading.gif">
-  </div> -->
-  <div id="faq-itens"></div>
+
+<div id="faq-itens"></div>
+
+<script>
+window.onload = function () {
+  $.ajax({
+    type: "GET",
+    url: "https://raw.githubusercontent.com/terrabrasilis/FAQ/main/terrabrasilis-faq-pt-2.json",
+    dataType: "json",
+    success: function (json) {
+
+      const container = $("#faq-itens");
+      Object.entries(json.faq).forEach(([key, section]) => {
+
+        let html = `
+          <div class="category">
+            <button class="accordion">
+              ${section.title}
+              <span class="icon"></span>
+            </button>
+            <div class="panel">
+        `;
+
+        section.itens.forEach(item => {
+          html += `
+            <div class="question-item">
+              <h3 class="faq-heading">${item.question}</h3>
+              <p class="faq-text">${item.answer}</p>
+            </div>
+          `;
+        });
+
+        html += `
+            </div>
+          </div>
+        `;
+
+        container.append(html);
+      });
+
+      enableAccordion();
+    },
+    error: function (err) {
+      console.error("Erro ao carregar o FAQ", err);
+    }
+  });
+};
+
+function enableAccordion() {
+  $(".accordion").on("click", function () {
+
+    const panel = $(this).next();
+
+    $(this).toggleClass("active");
+    panel.slideToggle(200);
+  });
+}
+</script>
+
 </body>
 </html>

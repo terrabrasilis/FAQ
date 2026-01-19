@@ -1,20 +1,53 @@
-// id of div entry point (faq-itens)
-window.onload=function(){
+window.onload = function () {
   $.ajax({
     type: "GET",
-    //url: "/terrabrasilis-faq-en.json",
     url: "https://raw.githubusercontent.com/terrabrasilis/FAQ/main/terrabrasilis-faq-pt.json",
-    // url: "https://raw.githubusercontent.com/terrabrasilis/FAQ/main/terrabrasilis-faq-en.json",
     dataType: "json",
-    success: function(json) {
-      json.itens.forEach(item => {
-        let html='<div class="question-item">';
-        html+='<h3>' +item.question + '</h3>';
-        html+='<p>' +item.answer+'</p>'
-        html+='</div>';
-        $("#faq-itens").append(html);
+    success: function (json) {
+
+      const container = $("#faq-itens");
+      Object.entries(json.faq).forEach(([key, section]) => {
+
+        let html = `
+          <div class="category">
+            <button class="accordion">
+              ${section.title}
+              <span class="icon"></span>
+            </button>
+            <div class="panel">
+        `;
+
+        section.itens.forEach(item => {
+          html += `
+            <div class="question-item">
+              <h3 class="faq-heading">${item.question}</h3>
+              <p class="faq-text">${item.answer}</p>
+            </div>
+          `;
+        });
+
+        html += `
+            </div>
+          </div>
+        `;
+
+        container.append(html);
       });
-      //$('#loading').hide();
+
+      enableAccordion();
+    },
+    error: function (err) {
+      console.error("Erro ao carregar o FAQ", err);
     }
+  });
+};
+
+function enableAccordion() {
+  $(".accordion").on("click", function () {
+
+    const panel = $(this).next();
+
+    $(this).toggleClass("active");
+    panel.slideToggle(200);
   });
 }
