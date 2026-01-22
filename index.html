@@ -74,6 +74,11 @@
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.07);
     }
 
+    .accordion:focus {
+      background-color: #f7fbfa !important;
+      outline: none;
+    }
+
     .faq-heading {
       font-weight: 600;
       font-size: 18px;
@@ -100,7 +105,7 @@
 window.onload = function () {
   $.ajax({
     type: "GET",
-    url: "https://raw.githubusercontent.com/terrabrasilis/FAQ/main/terrabrasilis-faq-pt-2.json",
+    url: "https://raw.githubusercontent.com/terrabrasilis/FAQ/main/terrabrasilis-faq-pt.json",
     dataType: "json",
     success: function (json) {
 

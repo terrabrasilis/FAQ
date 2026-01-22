@@ -87,7 +87,7 @@
         },
         {
           "question": "How can I access TerraBrasilis data via WFS service?",
-          "answer": "Use the URL 'http://terrabrasilis.dpi.inpe.br/geoserver/ows' as the data source."
+          "answer": "Use the URL 'https://terrabrasilis.dpi.inpe.br/geoserver/ows' as the data source. For more details on data access and usage, please refer to the <a href='https://terrabrasilis.dpi.inpe.br/categoria/conteudo-tecnico/' target='_blank'>technical content published on the blog</a>."
         }
       ]
     },
